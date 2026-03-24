@@ -1,5 +1,5 @@
 # Switcharoo-App
-Accessibility Tool/Fronting Catalog
+Fronting Catalog Accessibility Tool
 
 ## How to Use
 To add a member, click the plus sign next to "Add Member". This will take you to a new page where you can 
