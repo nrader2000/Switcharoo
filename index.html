@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Replace with your description" />
+    <title>Switcharoo</title>
+    <link rel="icon" href="/switcharooicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="body">
+    <div class="container">
+        <div class="text">
+            <h1 style="font-weight: bold;">Fronters</h1>
+        </div>
+        <div id="table" class="table-editable">
+            <h4 class="data">Add Fronter <span class="table-add glyphicon glyphicon-plus"></span></h4>
+            <table class="table">
+            <!-- Header Row -->
+            <thead>
+                <tr>
+                <th class="data table-th">Name</th>
+                <th class="data table-th">Time Fronted</th>
+                <th></th>
+                </tr>
+            </thead>
+            <!-- This is our clonable row -->
+             <tbody>
+             </tbody>
+            <tr class="hide">
+                <td>
+                    <select id="frontdropdown" onclick="populate()"></select>
+                </td>
+                <td class="data table-td timeCell"></td>
+                <td>
+                    <span class="table-remove glyphicon glyphicon-remove"></span>
+                </td>
+            </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="text">
+            <h1 style="font-weight: bold;">Members</h1>
+        </div>
+        <div class="table-editable">
+            <h4 class="data">Add Member <a class="glyphicon glyphicon-plus member-link" href="member.html"></a></h4>
+            <table class="table" id="table2">
+            <!-- Header Row -->
+            <thead>
+                <tr>
+                <th class="data table-th">Name</th>
+                <th></th>
+                </tr>
+            </thead>
+            <!-- This is our clonable row -->
+            <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <br>
+        <h3 class="data collapsible">How to Use<span class="arrow">▼</span></h3>
+        <div class="content">
+            <p class="data">To add a member, click the plus sign next to "Add Member". This 
+                will take you to a new page where you can enter items such as the member's name, 
+                their pronouns, description, and select a representative picture. To remove a member, 
+                click the red X next to the member you want to remove. 
+                <br><br> 
+                To add a fronter, click the plus sign next to "Add Front". This will create a row that
+                includes a dropdown menu and the time fronted (which is based on the current time of addition). 
+                This dropdown menu will consist of the names of the members you have added. 
+                Click on the dropdown menu to open it, and then select the name of the current fronting member
+                from the dropdown menu. To remove a fronter, click the red X next to the fronter you want to remove. 
+                <br><br>
+            </p>
+        </div>
+        <br><br>
+    </div>
+    <br>
+    <footer>
+        <p class="data">&copy; Switcharoo <span id="year"></span> <a href="https://buymeacoffee.com/nrader" target="_blank" rel="noopener noreferrer" style="color:#ffffff; font-size:20px;"><i class="fa-solid fa-mug-saucer"></i></a></p>
+    </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore.js"></script>
+    <script src="index.js" defer></script>
+</body>
+</html>

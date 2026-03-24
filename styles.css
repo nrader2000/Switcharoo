@@ -1,0 +1,243 @@
+/* Place your CSS styles in this file */
+
+/* @import "compass/css3"; */
+
+.body {
+  height: 100%;
+  margin: 3%;
+  background-color: #2F2C4F;
+}
+
+.container {
+  display: flexbox;
+  background-color: rgb(58, 59, 59);
+  border-radius: 3em;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+
+.text{
+  color: #ffffff;
+  margin-top: 1%;
+  padding: 1%;
+  border-radius: 1.5em;
+}
+
+.data{
+  color: #ffffff;
+  padding: 1%;
+}
+
+.table-th{
+  font-size: larger;
+  vertical-align: middle;
+}
+
+.table-td{
+  font-size: larger;
+  height: 100px;
+}
+
+.link{
+  background-color: #ffffff;
+  color: #2E1CFF;
+  border: none;
+  font-weight: bold;
+  border-radius: 3em;
+  padding: 1% 2.5% 1% 2.5%;
+  text-align: right;
+}
+
+.table-editable {
+  margin-bottom: 8%;
+  .glyphicon {
+    font-size: 20px;
+  }
+}
+
+.member-ref {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.member-ref:hover{
+  color: rgb(228, 228, 228);
+}
+
+.table-remove {
+  color: #f00;
+  cursor: pointer;
+  
+  &:hover {
+    color: rgb(255, 93, 93);
+  }
+}
+
+.table-add {
+  color: rgb(41, 198, 215);
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 0;
+  
+  &:hover {
+    color: rgb(137, 242, 254);
+  }
+}
+
+.table-add-2 {
+  color: rgb(41, 198, 215);
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 0;
+  
+  &:hover {
+    color: rgb(137, 242, 254);
+  }
+}
+
+.member-link{
+  color: rgb(41, 198, 215);
+  &:hover {
+    color: rgb(137, 242, 254);
+    text-decoration: none;
+  }
+}
+
+#export-btn{
+  background-color: rgb(41, 198, 215);
+  border: none;
+  font-weight: bold;
+  border-radius: 3em;
+  padding: 2% 25% 2% 25%;
+  font-size: large;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: rgb(137, 242, 254);
+    text-decoration: none;
+  }
+}
+
+form{
+  display: flexbox;
+  justify-content: center;
+  text-align: center;
+}
+
+.form-label{
+  font-size: x-large;
+}
+
+form input{
+  background-color: rgb(31, 31, 31);
+  color: #ffffff;
+  font-size: large;
+  width: 70%;
+  height: 3em;
+  border-radius: 0.25em;
+  border: solid 1px rgb(41, 198, 215);
+  transition: 0.2s;
+}
+
+form input:hover{
+  border: solid 2px rgb(137, 242, 254);
+}
+
+#preview{
+  cursor: pointer; 
+  width: 200px; 
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 1em;
+  transition: filter 0.3s ease;
+  &:hover{
+    filter: brightness(60%);
+  }
+}
+
+#table-preview{ 
+  width: 30px; 
+  height: 30px; 
+  object-fit: cover; 
+  border-radius: 1em;
+  transition: filter 0.3s ease;
+  &:hover{
+    filter: brightness(60%);
+  }
+}
+
+textarea{
+  resize: none;
+  width: 80%;
+  background-color: rgb(31, 31, 31);
+  border-radius: 0.25em;
+  border: solid 1px rgb(41, 198, 215);
+  transition: 0.2s;
+}
+
+textarea:hover{
+  border: solid 2px rgb(137, 242, 254);
+}
+
+select {
+  width: 75%;
+  padding: 3%;
+  font-size: large;
+  outline: none;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+footer{
+  text-align: center;
+  margin-top: 2%;
+  font-size: large;
+}
+
+.fa-mug-saucer {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.fa-mug-saucer:hover {
+  color: rgb(137, 242, 254);
+}
+
+.collapsible {
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  outline: none;
+  display: flex;
+  border-radius: 1em;
+}
+
+.collapsible:hover {
+  background-color: #555;
+  cursor: pointer;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  text-align: center;
+  font-size: medium;
+}
+
+.collapsible.active + .content {
+  max-height: 200px; /* Adjust as needed */
+}
+
+.arrow {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+  font-size: larger;
+}
+
+.collapsible.active .arrow {
+  transform: rotate(180deg);
+}

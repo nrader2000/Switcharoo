@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Replace with your description" />
+    <title>New Member</title>
+    <link rel="icon" href="/switcharooicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="body">
+    <div class="container">
+        <br>
+        <form id="postform">
+            <label class="data form-label">Avatar</label><br>
+            <label for="fileInput">
+                <img id="preview" src="Avatar.jpg" alt="Click to Upload">
+            </label>
+            <br><br>
+            <input id="fileInput" type="file" style="display: none" accept="image/*">
+            <label class="data form-label">Name</label><br>
+            <input type="text" id="nameInput" placeholder="Enter Name.." required><br><br>
+            <label class="data form-label">Pronouns</label><br>
+            <input type="text" id="pronounInput" placeholder="Enter Pronouns.."><br><br>
+            <label class="data form-label">Description</label><br>
+            <textarea name="description" id="descriptionInput" rows="20" style="color: #ffffff; font-size: large;"></textarea><br><br>
+            <button id="export-btn" type="submit">Add Member</button>
+            <br>
+            <br>
+        </form>
+        <br>
+    </div>
+    <br>
+    <footer>
+        <p class="data">&copy; Switcharoo <span id="year"></span> <a href="https://buymeacoffee.com/nrader" target="_blank" rel="noopener noreferrer" style="color:#ffffff; font-size:20px;"><i class="fa-solid fa-mug-saucer"></i></a></p>
+    </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore.js"></script>
+    <script src="index.js" defer></script>
+    <script src="member.js" defer></script>
+</body>
+</html>
