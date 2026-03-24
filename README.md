@@ -11,3 +11,7 @@ includes a dropdown menu and the time fronted (which is based on the current tim
 This dropdown menu will consist of the names of the members you have added. 
 Click on the dropdown menu to open it, and then select the name of the current fronting member
 from the dropdown menu. To remove a fronter, click the red X next to the fronter you want to remove.
+
+*This repo/web-app is currently built for the purpose of being hosted on github pages and as a result has 
+limited capabilities built into it. I give permission to anyone willing to update and add-on 
+additional features into this application.*
