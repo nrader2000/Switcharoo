@@ -1,6 +1,8 @@
 # Switcharoo-App
 Fronting Catalog Accessibility Tool
 
+*ADVISORY* - due to how this is hosted, storage on this application is limited to the page/the device the data was entered, the data you apply will likely only appear on that version of the page!!
+
 ### How to Use
 To add a member, click the plus sign next to "Add Member". This will take you to a new page where you can 
 enter items such as the member's name, their pronouns, description, and select a representative picture. 
